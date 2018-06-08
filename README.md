@@ -12,9 +12,7 @@ If you find our works useful in your research, please consider citing:
 
 ## Reference Resources
 [rude-carnie](https://github.com/dpressel/rude-carnie)
-
-[Age and Gender Classification using Convolutional Neural Networks] (https://www.openu.ac.il/home/hassner/projects/cnn_agegender/)
-
+Age and Gender Classification using Convolutional Neural Networks(https://www.openu.ac.il/home/hassner/projects/cnn_agegender/)
 [AgeGenderDeepLearning](https://github.com/GilLevi/AgeGenderDeepLearning)
 
 
