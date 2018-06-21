@@ -1,6 +1,8 @@
 # agegenderLMTCNN
 Official implementation of [Joint Estimation of Age and Gender from Unconstrained Face Images using Lightweight Multi-task CNN for Mobile Applications](https://arxiv.org/abs/1806.02023)
 
+Created by [Jia-Hong Lee](https://github.com/Jia-HongHenryLee), Yi-Ming Chan()
+
 ## Introduction
 Automatic age and gender classification based on unconstrained images has become essential techniques on mobile devices. With limited computing power, how to develop a robust system becomes a challenging task. In this paper, we present an efficient convolutional neural network (CNN) called lightweight multi-task CNN for simultaneous age and gender classification. Lightweight multi-task CNN uses depthwise separable convolution to reduce the model size and save the inference time. On the public challenging Adience dataset, the accuracy of age and gender classification is better than baseline multi-task CNN methods.
 
@@ -11,7 +13,14 @@ If you find our works useful in your research, please consider citing:
 	J.-H. Lee, Y.-M. Chan, T.-Y. Chen, C.-S Chen
 	IEEE International Conference on Multimedia Information Processing and Retrieval, MIPR 2018
 
-## Coming soon ...
+## Prerequisition
+- Python 2.7
+- [TensorFlow 1.2.0 or higher](https://www.tensorflow.org/install/install_linux)
+'''bash
+pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
+'''
+
+## Coming Soon ...
 
 ## Reference Resources
 [rude-carnie](https://github.com/dpressel/rude-carnie)
