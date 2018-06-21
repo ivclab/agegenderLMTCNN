@@ -16,6 +16,7 @@ If you find our works useful in your research, please consider citing:
 ## Prerequisition
 - Python 2.7
 - [TensorFlow 1.2.0 or higher](https://www.tensorflow.org/install/install_linux)
+
 '''bash
 pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
 '''
