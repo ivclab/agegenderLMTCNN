@@ -19,6 +19,15 @@ If you find our works useful in your research, please consider citing:
 ```bash
 $ pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
 ```
+## Usage
+1. Clone the agegenderLMTCNN repository:
+```bash
+$ git clone --recursive https://github.com/ivclab/agegenderLMTCNN.git
+```
+2. Download Adience Dataset:
+```bash
+$ python download_adiencedb.py
+```
 
 ## Coming Soon ...
 
