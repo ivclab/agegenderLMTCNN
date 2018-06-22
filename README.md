@@ -9,9 +9,12 @@ Automatic age and gender classification based on unconstrained images has become
 ## Citing Paper
 If you find our works useful in your research, please consider citing:
 
-	Joint Estimation of Age and Gender from Unconstrained Face Images using Lightweight Multi-task CNN for Mobile Applications
-	J.-H. Lee, Y.-M. Chan, T.-Y. Chen, C.-S Chen
-	IEEE International Conference on Multimedia Information Processing and Retrieval, MIPR 2018
+	@inproceedings{
+		Title   = {Joint Estimation of Age and Gender from Unconstrained Face Images using Lightweight Multi-task CNN for Mobile Applications},
+		Author  = {Lee, Jia-Hong and Chan, Yi-Ming and Chen, Ting-Yen and Chen, Chu-Song}, 
+		booktitle = {IEEE International Conference on Multimedia Information Processing and Retrieval, MIPR},
+		year    = {2018}
+	}
 
 ## Prerequisition
 - Python 2.7
@@ -28,6 +31,16 @@ $ git clone --recursive https://github.com/ivclab/agegenderLMTCNN.git
 ```bash
 $ python download_adiencedb.py
 ```
+3. Split raw data into training set, validation set and testing set per fold for five-fold validation.
+this project have been generated this files in DataPreparation/FiveFolds/train_val_test_per_fold_agegender.
+if you want to generate the new one, you can utilize the following command:
+```bash
+$ python datapreparation.py \
+	--inputdir=./adiencedb/aligned \
+	--rawfoldsdir=./DataPreparation/FiveFolds/original_txt_files \
+	--outfilesdir=./DataPreparation/FiveFolds/train_val_test_per_fold_agegender
+```
+
 
 ## Coming Soon ...
 
