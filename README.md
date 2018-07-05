@@ -10,10 +10,10 @@ Automatic age and gender classification based on unconstrained images has become
 If you find our works useful in your research, please consider citing:
 
 	@inproceedings{
-		Title   = {Joint Estimation of Age and Gender from Unconstrained Face Images using Lightweight Multi-task CNN for Mobile Applications},
-		Author  = {Lee, Jia-Hong and Chan, Yi-Ming and Chen, Ting-Yen and Chen, Chu-Song}, 
-		booktitle = {IEEE International Conference on Multimedia Information Processing and Retrieval, MIPR},
-		year    = {2018}
+	  Title   = {Joint Estimation of Age and Gender from Unconstrained Face Images using Lightweight Multi-task CNN for Mobile Applications},
+	  Author  = {Lee, Jia-Hong and Chan, Yi-Ming and Chen, Ting-Yen and Chen, Chu-Song}, 
+	  booktitle = {IEEE International Conference on Multimedia Information Processing and Retrieval, MIPR},
+	  year    = {2018}
 	}
 
 ## Prerequisition
@@ -31,8 +31,8 @@ $ git clone --recursive https://github.com/ivclab/agegenderLMTCNN.git
 ```bash
 $ python download_adiencedb.py
 ```
-3. Split raw data into training set, validation set and testing set per fold for five-fold validation.
-this project have been generated this files in DataPreparation/FiveFolds/train_val_test_per_fold_agegender.
+3. Split raw data into training set, validation set and testing set per fold for five-fold cross validation.
+this project have been generated this txt files in DataPreparation/FiveFolds/train_val_test_per_fold_agegender.
 if you want to generate the new one, you can utilize the following command:
 ```bash
 $ python datapreparation.py \
@@ -40,8 +40,47 @@ $ python datapreparation.py \
 	--rawfoldsdir=./DataPreparation/FiveFolds/original_txt_files \
 	--outfilesdir=./DataPreparation/FiveFolds/train_val_test_per_fold_agegender
 ```
+4. Pre-process raw data to generate tfrecord files of training set, validation set and testing set in tfrecord directory:
+```bash
+$ python multipreproc.py \
+	--fold_dir ./DataPreparation/FiveFolds/train_val_test_per_fold_agegender \
+	--data_dir ./adiencedb/aligned \
+	--tf_output_dir ./tfrecord \
+```
+or you can download tfrecord files which have been generated:
+```bash
+$ python download_tfrecord.py
+```
+
+5. Train LMTCNN model or Levi_Hassner model. Trained models will store in models directory:
+```bash
+# five-fold LMTCNN model for age and gender tasks 
+$ ./script/trainfold1.sh
+$ ./script/trainfold2.sh
+$ ./script/trainfold3.sh
+$ ./script/trainfold4.sh
+$ ./script/trainfold5.sh
+
+# five-fold Levi_Hassner model for age task
+$ ./script/trainagefold1.sh
+$ ./script/trainagefold2.sh
+$ ./script/trainagefold3.sh
+$ ./script/trainagefold4.sh
+$ ./script/trainagefold5.sh
+
+# five-fold Levi_Hassner model for gender task
+$ ./script/traingenderfold1.sh
+$ ./script/traingenderfold2.sh
+$ ./script/traingenderfold3.sh
+$ ./script/traingenderfold4.sh
+$ ./script/traingenderfold5.sh
+```
+6. Evalate LMTCNN model or Levi_Hassner models. Result will be store in results directory:
 
 
+
+
+## Inference in Android devices
 ## Coming Soon ...
 
 ## Reference Resources
