@@ -9,11 +9,12 @@ Automatic age and gender classification based on unconstrained images has become
 ## Citing Paper
 If you find our works useful in your research, please consider citing:
 
-	@inproceedings{
+	@inproceedings{Lee2018JointEO,
 	  Title   = {Joint Estimation of Age and Gender from Unconstrained Face Images using Lightweight Multi-task CNN for Mobile Applications},
 	  Author  = {Lee, Jia-Hong and Chan, Yi-Ming and Chen, Ting-Yen and Chen, Chu-Song}, 
-	  booktitle = {IEEE International Conference on Multimedia Information Processing and Retrieval, MIPR},
-	  year    = {2018}
+	  booktitle = {IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR)},
+	  year    = {2018},
+	  pages   = {162-165}
 	}
 
 ## Prerequisition
@@ -55,32 +56,25 @@ $ python download_tfrecord.py
 5. Train LMTCNN model or Levi_Hassner model. Trained models will store in models directory:
 ```bash
 # five-fold LMTCNN model for age and gender tasks 
-$ ./script/trainfold1.sh
-$ ./script/trainfold2.sh
-$ ./script/trainfold3.sh
-$ ./script/trainfold4.sh
-$ ./script/trainfold5.sh
+$ ./script/trainfold1_best.sh ~ $ ./script/trainfold5_best.sh 
 
 # five-fold Levi_Hassner model for age task
-$ ./script/trainagefold1.sh
-$ ./script/trainagefold2.sh
-$ ./script/trainagefold3.sh
-$ ./script/trainagefold4.sh
-$ ./script/trainagefold5.sh
+$ ./script/trainagefold1.sh ~ $ ./script/trainagefold5.sh
 
 # five-fold Levi_Hassner model for gender task
-$ ./script/traingenderfold1.sh
-$ ./script/traingenderfold2.sh
-$ ./script/traingenderfold3.sh
-$ ./script/traingenderfold4.sh
-$ ./script/traingenderfold5.sh
+$ ./script/traingenderfold1.sh ~ $ ./script/traingenderfold5.sh
 ```
+or you can download model files which have been generated:
+```bash
+$ python download_model.py
+```
+
 6. Evalate LMTCNN model or Levi_Hassner models. Result will be store in results directory:
 
 
 
 
-## Inference in Android devices
+## Deploying model in Android devices
 ## Coming Soon ...
 
 ## Reference Resources

@@ -2,7 +2,7 @@
 
 python train.py \
 --multitask True \
---model_type LMTCNN \
+--model_type LMTCNN-1-1 \
 --train_dir ./tfrecord/train_val_test_per_fold_agegender/test_fold_is_3 \
 --model_dir ./models \
 --optim Momentum \

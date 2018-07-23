@@ -43,8 +43,8 @@ import json
 
 tf.app.flags.DEFINE_boolean('multitask', True,
 	'Whether utilize multitask model')
-tf.app.flags.DEFINE_string('model_type', 'LMTCNN',
-	'choose model structure. dp_multitask and mobilenet_multitask for multitask. inception, levi_hassner_bn and levi_hassner for singletask ')
+tf.app.flags.DEFINE_string('model_type', 'LMTCNN-1-1',
+	'choose model structure. LMTCNN-1-1 and mobilenet_multitask for multitask. inception, levi_hassner_bn and levi_hassner for singletask ')
 tf.app.flags.DEFINE_string('class_type', '',
 	'select which single task to train (Age or Gender), only be utilized when multitask=False and choose single task model_type')
 

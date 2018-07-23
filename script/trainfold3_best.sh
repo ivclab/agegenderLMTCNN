@@ -2,8 +2,8 @@
 
 python train.py \
 --multitask True \
---model_type LMTCNN-1-1 \
---train_dir ./tfrecord/train_val_test_per_fold_agegender/test_fold_is_4 \
+--model_type LMTCNN-2-1 \
+--train_dir ./tfrecord/train_val_test_per_fold_agegender/test_fold_is_2 \
 --model_dir ./models \
 --optim Momentum \
 --eta 0.01 \
