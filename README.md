@@ -19,7 +19,7 @@ If you find our works useful in your research, please consider citing:
 
 ## Prerequisition
 - Python 2.7
-- [TensorFlow](https://www.tensorflow.org/install/install_linux) 1.2.0 or higher
+- [TensorFlow](https://www.tensorflow.org/install/install_linux) 1.2.0 ~ 1.5.0
 ```bash
 $ pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
 ```
@@ -52,6 +52,7 @@ or you can download tfrecord files which have been generated:
 ```bash
 $ python download_tfrecord.py
 ```
+or you can download the tfrecord files on [OneDrive](https://9caff703fcfa4c3fac83-my.sharepoint.com/:u:/g/personal/honghenry_lee_iis_sinica_edu_tw/ES91ijG3cCZCieytYdqczoIBY7JjuePELHhTXPIbxBTo_g?e=ADjDco)
 
 5. Train LMTCNN model or Levi_Hassner model. Trained models will store in models directory:
 ```bash
@@ -68,9 +69,9 @@ or you can download model files which have been generated:
 ```bash
 $ python download_model.py
 ```
+or you can download the model files on [OneDrive]( https://9caff703fcfa4c3fac83-my.sharepoint.com/:u:/g/personal/honghenry_lee_iis_sinica_edu_tw/ESMSGAn0fC5ElnHTMdeMFJMBjDWUbbKUve5nW8kQ2as-9Q?e=KLjYwh)
 
 6. Evalate LMTCNN model or Levi_Hassner models. Result will be store in results directory:
-
 
 
 
