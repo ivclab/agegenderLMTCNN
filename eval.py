@@ -52,7 +52,7 @@ tf.app.flags.DEFINE_string('eval_dir','./tfrecord/train_val_test_per_fold_agegen
 	'valiation and testing set directory')
 tf.app.flags.DEFINE_string('eval_data','test',
 	'data type validation or test')
-tf.app.flags.DEFINE_string('model_dir','./models/train_val_test_per_fold_agegender/test_fold_is_0/LMTCNN-run-30707',
+tf.app.flags.DEFINE_string('model_dir','./models/train_val_test_per_fold_agegender/test_fold_is_0/LMTCNN-1-1-run-30707',
 	'trained model directory')
 tf.app.flags.DEFINE_string('result_dir','./results',
 	'output files stored in results directory')
