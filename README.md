@@ -72,6 +72,16 @@ $ python download_model.py
 or you can download the model files on [OneDrive]( https://9caff703fcfa4c3fac83-my.sharepoint.com/:u:/g/personal/honghenry_lee_iis_sinica_edu_tw/ESMSGAn0fC5ElnHTMdeMFJMBjDWUbbKUve5nW8kQ2as-9Q?e=KLjYwh)
 
 6. Evalate LMTCNN model or Levi_Hassner models. Result will be store in results directory:
+```bash
+# five-fold LMTCNN model for age and gender tasks 
+$ ./script/evalfold1_best.sh ~ $ ./script/evalfold5_best.sh 
+
+# five-fold Levi_Hassner model for age task
+$ ./script/evalagefold1.sh ~ $ ./script/evalagefold5.sh
+
+# five-fold Levi_Hassner model for gender task
+$ ./script/evalgenderfold1.sh ~ $ ./script/evalgenderfold5.sh
+```
 
 
 
