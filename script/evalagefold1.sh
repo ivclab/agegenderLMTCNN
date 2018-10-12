@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 python eval.py \
---multitask False \
+--multitask=False \
 --model_type levi_hassner \
 --class_type Age \
 --eval_dir ./tfrecord/train_val_test_per_fold_agegender/test_fold_is_0 \
