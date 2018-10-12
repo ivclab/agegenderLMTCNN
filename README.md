@@ -83,6 +83,9 @@ $ ./script/evalagefold1.sh ~ $ ./script/evalagefold5.sh
 $ ./script/evalgenderfold1.sh ~ $ ./script/evalgenderfold5.sh
 ```
 
+7. Inference image and generated .pb file:
+Coming Soon ...
+
 
 
 ## Deploying model in Android devices
