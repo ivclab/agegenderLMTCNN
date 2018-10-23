@@ -19,6 +19,8 @@ If you find our works useful in your research, please consider citing:
 
 ## Prerequisition
 - Python 2.7
+- Numpy
+- OpenCV
 - [TensorFlow](https://www.tensorflow.org/install/install_linux) 1.2.0 ~ 1.5.0
 ```bash
 $ pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
@@ -83,13 +85,20 @@ $ ./script/evalagefold1.sh ~ $ ./script/evalagefold5.sh
 $ ./script/evalgenderfold1.sh ~ $ ./script/evalgenderfold5.sh
 ```
 
-7. Inference image and generated .pb file:
-Coming Soon ...
+7. Inference aligned facial image and generate frozen model files(.pb file) which model size are illustrated in the paper. The frozen model files(.pb file) are stored in model directory:
+```bash
+# five-fold LMTCNN model for age and gender tasks 
+$ ./script/inference1_best.sh ~ $ ./script/inference5_best.sh 
 
+# five-fold Levi_Hassner model for age task
+$ ./script/inferenceage1.sh ~ $ ./script/inferenceage5.sh
 
+# five-fold Levi_Hassner model for gender task
+$ ./script/inferencegender1.sh ~ $ ./script/inferencegender5.sh
+```
 
-## Deploying model in Android devices
-## Coming Soon ...
+8. Deploying frozen model (.pb file) in Android devices.
+please refer the [androidversion](https://github.com/ivclab/agegenderLMTCNN/tree/master/androidversion) directory.
 
 ## Reference Resources
 [rude-carnie](https://github.com/dpressel/rude-carnie)
@@ -97,6 +106,8 @@ Coming Soon ...
 Age and Gender Classification using Convolutional Neural Networks(https://www.openu.ac.il/home/hassner/projects/cnn_agegender/)
 
 [AgeGenderDeepLearning](https://github.com/GilLevi/AgeGenderDeepLearning)
+
+[MTCNN](https://github.com/kpzhang93/MTCNN_face_detection_alignment)
 
 
 ## Contact

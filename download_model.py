@@ -74,7 +74,7 @@ def save_response_content(response, destination):
 if __name__ == "__main__":
 
 	print ('Download Model files ... ')
-	file_id = '1C0UvEAthKRcnvatHOZAHshPldRiJZnfz'
+	file_id = '1cQwsnfg-jtK2TaKf2KFrLzJAL86balIN'
 	destination = 'models.zip'
 	download_file_from_google_drive(file_id, destination)
 	with zipfile.ZipFile(destination) as zf:
