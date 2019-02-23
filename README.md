@@ -9,12 +9,13 @@ Automatic age and gender classification based on unconstrained images has become
 ## Citing Paper
 If you find our works useful in your research, please consider citing:
 
-	@inproceedings{Lee2018JointEO,
-	  Title   = {Joint Estimation of Age and Gender from Unconstrained Face Images using Lightweight Multi-task CNN for Mobile Applications},
-	  Author  = {Lee, Jia-Hong and Chan, Yi-Ming and Chen, Ting-Yen and Chen, Chu-Song}, 
-	  booktitle = {IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR)},
-	  year    = {2018},
-	  pages   = {162-165}
+	@inproceedings{lee2018joint,
+	title={Joint Estimation of Age and Gender from Unconstrained Face Images using Lightweight Multi-task CNN for Mobile Applications},
+	author={Lee, Jia-Hong and Chan, Yi-Ming and Chen, Ting-Yen and Chen, Chu-Song},
+	booktitle={2018 IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)},
+	pages={162--165},
+	year={2018},
+	organization={IEEE}
 	}
 
 ## Prerequisition
