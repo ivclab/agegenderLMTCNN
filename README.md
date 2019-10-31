@@ -112,5 +112,5 @@ Age and Gender Classification using Convolutional Neural Networks(https://www.op
 
 
 ## Contact
-Please feel free to leave suggestions or comments to [Jia-Hong Lee](https://github.com/Jia-HongHenryLee), Yi-Ming Chan (yiming@iis.sinica.edu.tw), Ting-Yen Chen (timh20022002@iis.sinica.tw) ,Chu-Song Chen (song@iis.sinica.edu.tw)
+Please feel free to leave suggestions or comments to [Jia-Hong Lee](https://github.com/Jia-HongHenryLee)(honghenry.lee@gmail.com), Yi-Ming Chan (yiming@iis.sinica.edu.tw), Ting-Yen Chen (timh20022002@iis.sinica.tw) ,Chu-Song Chen (song@iis.sinica.edu.tw)
 
